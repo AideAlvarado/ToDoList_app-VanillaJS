@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KAWAII TODO's list</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b77cc8c1fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/modelo.js"></script>
+  </head>
+
+  <body>
+    <div class="cinta dos">
+      <section class="container">
+        <h1>To-Do List</h1>
+      </section>
+    </div>
+
+    <div id="wrapper">
+      <header>
+        <div class="insert" id="box">
+          <form action="#" method="get">
+            <input type="input" id="tituloTarea" placeholder="enter a task" />
+
+            <select id="prioridad" required>
+              <option value="">Select a priority</option>
+              <option value="urgent">Urgent</option>
+              <option value="daily">Daily</option>
+              <option value="monthly">Monthly</option>
+            </select>
+            <!--
+            <input
+              type="submit"
+              value="Guardar"
+              id="guardar_viejo"
+              class="fas fa-plus"
+            />-->
+            <button
+              type="search"
+              id="guardar"
+              autofocus="off"
+              autocomplete="off"
+              class="fas fa-save"
+            ></button>
+          </form>
+          <br />
+          <p id="mensaje"></p>
+        </div>
+        <div class="filter">
+          <select id="prioridadSelect">
+            <option value="">all tasks</option>
+            <option value="urgent">Urgent</option>
+            <option value="daily">Daily</option>
+            <option value="monthly">Monthly</option>
+          </select>
+
+          <input type="input" placerholder="Tarea a buscar" id="buscar" />
+        </div>
+      </header>
+      <!-- /header -->
+
+      <main>
+        <section class="notareas" id="notareas"></section>
+        <section class="tareas" id="tareas">
+          <!-- este contenido hay que comentarlo cuando empeceis a desarrollar el listado de tareas-->
+          <!-- 
+          <article id="1" class="urgente">
+            <h2>Hacer el proyecto final de Javascript</h2>
+            <a href="#" title="eliminar">Eliminar</a>
+          </article>
+
+          <article id="2" class="diaria">
+            <h2>No frustrarse al intentar hacer un codigo</h2>
+            <a href="#" title="eliminar">Eliminar</a>
+          </article>
+
+          <article id="3" class="mensual">
+            <h2>No rendirse</h2>
+            <a href="#" title="eliminar">Eliminar</a>
+          </article>
+
+          <article id="4" class="diaria">
+            <h2>Seguir codificando</h2>
+            <a href="#" title="eliminar">Eliminar</a>
+          </article> -->
+
+          <!-- este contenido hay que comentarlo cuando empeceis a desarrollar el listado de tareas -->
+        </section>
+      </main>
+
+      <footer>
+        <p>By Aide Alvarado</p>
+      </footer>
+    </div>
+    <!--
+    <iframe
+      width="2"
+      height="2"
+      src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1&mute=0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>-->
+    <script src="js/funciones.js"></script>
+    <script src="js/eventos.js"></script>
+  </body>
+</html>

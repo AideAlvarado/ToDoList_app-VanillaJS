@@ -1,0 +1,215 @@
+@import url(reset.css);
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #a39bd2;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  margin-top: 70px;
+  font-family: "Special Elite", cursive;
+}
+
+#wrapper {
+  max-width: 35em;
+  margin: 0 auto;
+}
+#tituloTarea,
+#prioridad,
+#prioridadSelect,
+#buscar {
+  border-radius: 10px;
+  font-family: "Special Elite", cursive;
+  padding: 0.5em;
+  color: gray;
+  border-color: transparent;
+}
+#guardar {
+  font-size: x-large;
+  box-shadow: 3px 3px gray;
+  color: salmon;
+}
+#guardar:hover {
+  color: tomato;
+  box-shadow: 0px 0px tomato;
+}
+
+header .insert {
+  border-right-width: 5px;
+  border-left-width: 5px;
+  padding: 20px;
+  border-radius: 15px 15px 0 0;
+  background: #fdff38;
+  box-shadow: 4px 3px 7px 2px #00000040;
+}
+
+header .filter {
+  background-color: #fdff38;
+  padding: 10px;
+  box-shadow: 4px 0px 2px #00000040;
+}
+
+main .tareas article {
+  height: 60px;
+  position: relative;
+  border-bottom: 1px solid gray;
+  /* box-shadow: 0px 0px #00000040; */
+  padding: 20px 0px 20px 20px;
+}
+
+main .tareas .urgent {
+  background-color: #cfff04;
+}
+main .tareas .urgent:hover {
+  background-color: #cfff04;
+  font-size: larger;
+  color: gray;
+  /* box-shadow: 4px 0px 2px #00000040; */
+}
+
+main .tareas .daily {
+  background-color: #00ffff;
+}
+main .tareas .daily:hover {
+  background-color: #00ffff;
+  font-size: larger;
+  color: gray;
+  /* box-shadow: 4px 0px 2px #00000040; */
+}
+
+main .tareas .monthly {
+  background-color: #ff00ff;
+}
+main .tareas .monthly:hover {
+  background-color: #ff00ff;
+  font-size: larger;
+  color: gray;
+  /* box-shadow: 4px 0px 2px #00000040; */
+}
+
+main .tareas article > a {
+  background-color: tomato;
+  display: inline-block;
+  padding: 21px;
+  color: white;
+  text-decoration: none;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: 1s;
+  text-align: center;
+  box-shadow: 4px 0px 2px #00000040;
+}
+
+main .tareas article > a:hover {
+  width: 125px;
+}
+
+footer {
+  padding: 10px;
+  background-color: #fdff38;
+  color: black;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Special Elite", cursive;
+}
+
+#mensaje {
+  background-color: red;
+  text-align: center;
+  color: white;
+}
+
+#notareas article {
+  padding: 20px;
+}
+
+.cinta {
+  position: absolute;
+  text-align: center;
+  display: contents;
+  *display: inline;
+  zoom: 1;
+  margin: 20px auto 10px;
+}
+
+.uno:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 30px;
+  position: relative;
+  top: 20px;
+  margin: auto;
+  background: rgba(255, 255, 200, 0.6);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  transform: rotate(-45deg);
+}
+
+.dos:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 20px;
+  position: relative;
+  top: 20px;
+  left: -90px;
+  margin: auto;
+  background: rgba(255, 255, 200, 0.6);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  transform: rotate(-45deg);
+  border-style: dotted;
+}
+.dos:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 20px;
+  position: relative;
+  top: -30px;
+  left: 90px;
+  margin: auto;
+  background: rgba(255, 255, 200, 0.6);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  transform: rotate(-45deg);
+  border-style: dotted;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 90px;
+  max-width: 200px;
+  min-width: 140px;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  /* border-radius: 8px; */
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 25px;
+}
+
+img {
+  border-radius: 45%;
+  position: absolute;
+  opacity: 0.7;
+}
